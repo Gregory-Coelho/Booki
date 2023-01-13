@@ -492,16 +492,15 @@ header {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        padding: 34px 20px 43px 20px;
     }
     .search {
         width: 100%;
         margin: 0 22px 0 22px;
-    }
-    .search__icon {
-        width: 49px;
+        margin-left: 0;
     }
     .search__input {
-        width: 100%;
+        width: 50%;
     }
     .search__button {
         width: 49px;

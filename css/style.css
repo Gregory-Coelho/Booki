@@ -146,7 +146,6 @@ i.search__button__icon {
     display: none;
 }
 .filters{
-    width: 100%;
     display: flex;
     gap: 40px;
     align-items: center;
@@ -154,18 +153,30 @@ i.search__button__icon {
     padding: 0;
     list-style-type: none;
 }
-
 .filters h3{
     margin-left: 12px;
 }
-
+.filters__container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+} 
+.filters__container__column {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
 .filters__button{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 50px;
     border: 2px solid #D9D9D9;
     background-color: white;
-    padding:10px 20px 10px 20px;
+    padding:10px 13px 10px 13px;
     font-weight: 700;
 }
 
@@ -455,10 +466,6 @@ i.search__button__icon {
     .fa-star{
         font-size: .8em;
     }
-    .filters{
-        justify-content: space-between;
-        gap: 0;
-    }
   }
 
   @media screen and (max-width: 768px) {
@@ -481,7 +488,7 @@ i.search__button__icon {
     .header__navigation__card {
         padding: 48px 0 43px 0;
         border-top: 0;
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid #F2F2F2;
     }
     .title {
         margin-top: 31px;
@@ -490,10 +497,28 @@ i.search__button__icon {
         margin: 13px 0 36px 0;
     }
     .filters {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 34px 20px 43px 20px;
+        margin: 0;
+        gap: 15px;
+    }
+    .filters__container {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        padding: 34px 20px 43px 20px;
+        gap: 14px;
+    } 
+    .filters__container__column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+    .filters__button {
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 11px;
     }
     .search {
         width: 100%;
@@ -512,6 +537,9 @@ i.search__button__icon {
     i.search__button__icon {
         width: 100%;
         display: inline-block
+    }
+    .information h4 {
+        margin-top: 0;
     }
     .display {
         display: flex;

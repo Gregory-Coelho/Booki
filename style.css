@@ -409,19 +409,14 @@ header {
     .display {
         flex-direction: column;
     }
-    .display__popular{
-        width: 100%;
-    }
+ 
     .display__accommodation{
         width: 100%;
     }
     .display__accommodation__container__card{
         width: 100%;
     }
-    .display__popular__container{
-        flex-direction: row;
-        gap: 23px
-    }
+ 
     .activity__display{
         height: 267px;
     }
@@ -437,8 +432,16 @@ header {
         display: flex;
         align-items: center;
     }
+    .display__popular{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .display__popular__container{
+        flex-direction: row;
+        gap: 23px
+    }
     .display__popular__card__textAndStars{
-    margin: 0px 0px 7px 10px;
+        margin: 0px 0px 7px 10px;
     }
     .display__popular__card__textAndStars h3{
         font-size: 14px;

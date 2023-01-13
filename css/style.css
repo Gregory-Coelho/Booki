@@ -45,7 +45,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
+form {
+    margin: 0 22px 0 22px
+}
 .background{
     padding: 0 50px 0px 50px;
 }
@@ -140,9 +142,8 @@ header {
     width: 132px;
     cursor: pointer;
 }
-.search__button__icon {
-    visibility: hidden;
-    width: 0%;
+i.search__button__icon {
+    display: none;
 }
 .filters{
     width: 100%;
@@ -504,11 +505,13 @@ header {
     }
     .search__button {
         width: 49px;
-        font-size: 0;
     }
-    .search__button__icon {
-        visibility: visible;
+    .search__button__text{
+        display: none;
+    }
+    i.search__button__icon {
         width: 100%;
+        display: inline-block
     }
     .display {
         display: flex;
